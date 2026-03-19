@@ -59,6 +59,10 @@ public class AuthLogin {
         this.tokenExpiresAt = tokenExpiresAt;
     }
 
+    public void updatePassword(String passwordHash) {
+        this.passwordHash = passwordHash;
+    }
+
     public void withdraw() {
         this.deletedAt = LocalDateTime.now();
     }
