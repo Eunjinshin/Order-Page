@@ -7,6 +7,7 @@ export interface User {
 export interface UserProfile {
   profileId: number
   userId: number
+  nickname: string | null
   userName: string | null
   userPhone: string | null
 }
